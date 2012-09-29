@@ -14,7 +14,7 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
-		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
@@ -34,30 +34,29 @@
 		
 		<div class="reveal">
 
-			<!-- Used to fade in a background when a specific slide state is reached -->
+			<!-- Used to fade în a background when a specific slide state is reached -->
 			<div class="state-background"></div>
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-	        <h1>mai mult decat</h1>
+	        <h1>mai mult decât</h1>
 	        <h1>unit teste</h1>
 	        <p>Adi Roiban &nbsp;-&nbsp;adi@roiban.ro</p>
 	        <p></p>
 			    <p>GeekMeet#11</p>
 			    <p>29.09.2013 Cluj-Napoca</p>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation,
-						but you can see them if you run the speaker notes server.
+						Note pentru server
 					</aside>
 				</section>
 
 				<section>
 			    <h2>Despre Mine</h2>
 					<p>Jack of all trades, master of none</p>
-					<p>sysadmin-programator</p>
+					<p>neam de programator</p>
 					<p>pasionat de software liber</p>
-					<p>intreprinzator liber-profesionist</p>
+					<p>întreprinzător liber-profesionist</p>
 					<p><br></p>
 					<p class="fragment">rareori motociclist sau skipper</p>
 				</section>
@@ -66,43 +65,42 @@
 	        <h2>DESPRE VOI</h2>
 	        <div>
             <ul>
-              <li>QA ?</li>
-              <li>Suport ?</li>
-              <li>Programatori aplicatii?</li>
-              <li>Programatori infrastructura?</li>
+              <li>QA?</li>
+              <li>Suport?</li>
+              <li>Programatori?</li>
             </ul>
 	        </div>
 		    </section>
 
         <section>
           <h2>Cuprins</h2>
-          <p>Verificarea calitatii</p>
+          <p>Verificarea calităţii</p>
           <p>Unelte folosite - open/free software</p>
           <p>Metode de testare</p>
         </section>
 
         <section>
-          <h2>Testare automata - De ce?</h2>
-          <div>De mana e greu si imprevizibil</div>
+          <h2>Testare automată - De ce?</h2>
+          <div>De mâna e greu şi imprevizibil</div>
           <div>Scapam de frica regresiilor</div>
-          <div>functionalitati noi</div>
+          <div>functionalităţi noi</div>
           <div>refactoring de voie</div>
         </section>
 
         <section>
-          <h2>Testare automata - Cum?</h2>
+          <h2>Testare automată - Cum?</h2>
           <div>bazate pe specificatii/cerinte</div>
           <div>venite de la client sau realizate de noi</div>
-          <div>doar testarea automata</div>
-          <div>poate fi repetata oricand</div>
-          <div>fara interventie umana (inaite, in timpul, dupa)</div>
+          <div>doar testarea automată</div>
+          <div>poate fi repetată oricand</div>
+          <div>fara interventie umană (inaite, în timpul, după)</div>
         </section>
 
 		    <section>
 	        <h2>Unit teste</h2>
 	        <div>
             <ul>
-              <li class="fragment">Ce sunt ele? <span class="fragment">(mana sus)</span></li>
+              <li class="fragment">Ce sunt ele?</li>
 			        <li class="fragment">Scrieti unit teste?</li>
 			        <li class="fragment">Inainte de implementare?</li>
 				    </ul>
@@ -111,10 +109,10 @@
 
 		    <section>
 		    	<section>
-		        <h2>Analiza statica a codului</h2>
+		        <h2>Analiza statică a codului</h2>
 		        <h3>aka lintere</h3>
-						<p>Nu testeaza functionalitatea</p>
-		        <p>Asigura un cod unitar</p>
+						<p>Nu testează functionalitatea</p>
+		        <p>Asigură un cod unitar</p>
 		        <p>Teste pentru style guide - coding conventions</p>
 		        <p><br></p>
 		        <ul class="fragment">
@@ -144,18 +142,25 @@
 						<p>Debugging</p>
 					</section>
 
-					<section>
-						<h2>Buildbot</h2>
-						<p>testare continua</p>
-						<p>multi-platforma, multi-configuratii</p>
-						<p>actiuni pe baza rezultatelor</p>
-						<p>buildbot try</p>
-					</section>
-
 	        <section data-state="soothe">
 	        	<h1>Demo Python-Nose</h1>
 	        	<p>filtre, raporate, debuging, elevated</p>
 	        </section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Continous Integration</h2>
+						<p>cel puţin o dată pe zi</p>
+						<p>multi-platformă, multi-configuraţii</p>
+						<p>acţiuni pe baza rezultatelor</p>
+
+					</section>
+					<section data-state="alert">
+						<h1>Buildbot</h1>
+						<p>buildbot try</p>
+						<p>... mai multe pentru altă dată</p>
+					</section>
 				</section>
 
 				<section>
@@ -164,7 +169,7 @@
 		        <div>
 	            <ul>
 	              <li class="fragment">Ce sunt ele?</li>
-				        <li class="fragment">Scrieti teste de integrare?</li>
+				        <li class="fragment">Scrieţi teste de integrare?</li>
 				        <li class="fragment">Pentru toate componentele?</li>
 					    </ul>
 						</div>
@@ -173,8 +178,8 @@
 					<section>
 						<h2>Teste de integrare - Ce sunt ele?</h2>
 						<p>la nivel de cod</p>
-						<p>verifica interactiunea dintre componente</p>
-						<p>nu exista scuze pentru absenta lor</p>
+						<p>verifică interacţiunea dintre componente</p>
+						<p>nu există scuze pentru absenţa lor</p>
 					</section>
 
 					<section>
@@ -183,34 +188,25 @@
 
 					<section>
 						<h2>generatoare de obiecte/componente</h2>
-							<p>reduce numarul de importuri in teste</p>
+							<p>reduce numarul de importuri în teste</p>
 							<p>reduce liniile pentru cod secundar</p>
 					</section>
 
 					<section>
 						<h2>generator date</h2>
-						<p>evita interactiunea cu sistemul de input/output, fisiere, retea</p>
+						<p>evită interactiunea cu sistemul de input/output, fisiere, retea</p>
 					</section>
 
 					<section>
 						<h2>date din cache</h2>
-						<p>mareste viteza de executia</p>
+						<p>mareste viteza de executie</p>
 					</section>
 
 					<section>
-						<h2>implementari minimale</h2>
-					  <p>verifica "raza" de actiune a compenentelor</p>
+						<h2>implementări minimale</h2>
+					  <p>verifică "raza" de actiune a compenentelor</p>
 						<p>pot fi implementate prin mock</p>
 					</section>
-
-	        <section data-state="soothe">
-	        	<h1>Demo Python</h1>
-	        	<p>component factory - makeServiceAvatar</p>
-	        	<p>cod secundar redus - TestServiceRealm.test_requestAvatar_os</p>
-	        	<p>implementari de baza - LogTestCase, CommandTestCase</p>
-
-	        </section>
-
 				</section>
 
 				<section>
@@ -219,17 +215,17 @@
 		        <div>
 	            <ul>
 	              <li class="fragment">Ce sunt ele?</li>
-				        <li class="fragment">Scrieti teste de sistem?</li>
-				        <li class="fragment">Pentru toate functionalitatile?</li>
+				        <li class="fragment">Scrieţi teste de sistem?</li>
+				        <li class="fragment">Pentru toate functionalitătile?</li>
 					    </ul>
 						</div>
 					</section>
 
 					<section>
 						<h2>Teste de sistem - Ce sunt ele?</h2>
-						<p>la nivel de interfata lumea exterioara</p>
+						<p>la nivel de interfată cu lumea exterioară</p>
 						<p>GUI / CLI / API / Protocol</p>
-						<p>verifica functionalitatea completa a sistemului</p>
+						<p>verifică functionalitatea completă a sistemului</p>
 						<p>black box</p>
 						<ul>
 							Exemple
@@ -240,10 +236,10 @@
 
 					<section>
 						<h2>Teste de sistem - GUI</h2>
-						<p>emulare/stimulare programata dispozitive de input</p>
-						<p>mouse / tastatura / evenimente sistem</p>
+						<p>emulare/stimulare programată a dispozitivelor de input</p>
+						<p>mouse / tastatură / evenimente sistem</p>
 						<p>cu ajutorul uneltelor de accesibilitate</p>
-						<p>pot fi incete sau restranse de sistem</p>
+						<p>pot fi încete sau restranse de sistem</p>
 						<p>Windows screensaver - window protection</p>
 						<p>Unix X11 headless framebuffer</p>
 					</section>
@@ -254,43 +250,28 @@
 					</section>
 
 					<section>
-						<h2>Teste de sistem - CLI</h2>
-						<p>tastatura / evenimente sistem</p>
-						<p>analiza text</p>
-						<p>CLI bot</p>
-					</section>
-
-					<section>
-						<h2>Teste de sistem - API/Protocol</h2>
+						<h2>Teste de sistem - CLI/API/Protocol</h2>
 						<p>pachete de retea / cereri de retea</p>
 						<p>API/Protocol user bot</p>
 					</section>
-
-	        <section data-state="soothe">
-	        	<h1>Demo Protocol Bot</h1>
-	        	<p>FTP/SFTP server launcher</p>
-	        	<p>FTP/SFTP Bot</p>
-	        	<p>acelasi principiu si pentru Selenium</p>
-	        </section>
-
 				</section>
 
 				<section>
 			    <section>
-		        <h2>Teste de acceptanta</h2>
+		        <h2>Teste de acceptantă</h2>
 		        <div>
 	            <ul>
 	              <li class="fragment">Ce sunt ele?</li>
-				        <li class="fragment">Scrieti teste de acceptanta?</li>
+				        <li class="fragment">Scrieţi teste de acceptantă?</li>
 					    </ul>
 						</div>
 					</section>
 
 					<section>
-						<h2>Teste de acceptanta - Ce sunt ele?</h2>
-						<p>bazate direct pe specificatii/cerinte</p>
-						<p>cod comun intre specificatie si testare</p>
-						<p>greu de gasit limbaj comun intre specificator si implementator</p>
+						<h2>Teste de acceptantă - Ce sunt ele?</h2>
+						<p>bazate direct pe specificaţii/cerinte</p>
+						<p>cod comun între specificaţie şi testare</p>
+						<p>greu de găsit limbaj comun între specificator şi implementator</p>
 						<p>smoke tests</p>
 						<p><br></p>
 						<ul class="fragment">
@@ -302,7 +283,7 @@
 					</section>
 
 	        <section data-state="blackout">
-	        	<h1>Reusite ?!</h1>
+	        	<h1>Reuşite ?!</h1>
 	        </section>
 
 	        <section data-state="soothe">
@@ -311,14 +292,14 @@
 				</section>
 
 				<section>
-					<h1>Intrebari !?</h1>
-					<p>Nelamuriri</p>
+					<h1>Întrebări !?</h1>
+					<p>Nelămuriri</p>
 					<p>Comentarii</p>
 				</section>
 
 				<section>
-					<h1>Insfarsit, sfarsitul</h1>
-					<h3>Sugestii si reclamatii</h3>
+					<h1>Însfârşit, sfârşitul</h1>
+					<h3>Sugestii şi reclamaţii</h3>
 					<p><strong>adi@roiban.ro</strong></p>
 					<p><br></p>
 					<p>
@@ -355,7 +336,7 @@
 				progress: true,
 				history: true,
 				
-				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are în /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
 
 				// Optional libraries used to extend on reveal.js
