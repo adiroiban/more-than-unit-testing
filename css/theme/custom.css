@@ -62,6 +62,12 @@ body {
 					0 20px 20px rgba(0,0,0,.15);
 }
 
+.reveal h1 {
+	font-size: 100px;
+	line-height: 100px;
+}
+
+
 .reveal h2 {
 	font-size: 56px;
 }
